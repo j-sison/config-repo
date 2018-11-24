@@ -7,3 +7,13 @@ logging:
     root: WARN
     com:
       orangeandbronze: DEBUG
+feign:
+  hystrix:
+    enabled:
+       true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+           strategy: SEMAPHORE
